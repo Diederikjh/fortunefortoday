@@ -24,31 +24,33 @@ pageTracker._trackPageview();
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+<script type="text/javascript" src="js/jquery.soap.js"></script>
+<script type="text/javascript" src="fortune.js"></script>
+
 <head>
 </head>
-<title>Fortune for today (maintenance)</title>
+<title>Fortune for today</title>
 
-<body>
+<body onload="getNewFortune();">
 
 <div class="container">
 
 <p>
 <h1>Fortune for today</h1>
 </p>
-
+<p>
+<input type="submit" value="Get new one" onClick="getNewFortune();" />
+</p>
 <p>
 	<h3>
 	<div id="fortuneBody">
-<p><h2>IS DOWN FOR MAINTENANCE</h2></p>
-<a href="http://thecatapi.com"><img src="http://thecatapi.com/api/images/get?format=src&type=gif"></a>
 	</div>
-
 	</h3>
 </p>
 <br>
 <p style="font-size:10px">
-Powerd by <a href="http://cdonner.com/fortune-cookie-service.htm" target=_blank>Christian Donner</a> and <a href="http://en.wikipedia.org/wiki/Fortune_(Unix)" target=_blank>fortune</a>
-(Hooray Linux!) For any feedback <a href="https://twitter.com/Diederik_za">@diederik_za</a> Sorry for the down time
+v2.0 Powerd by <a href="http://cdonner.com/fortune-cookie-service.htm" target=_blank>Christian Donner</a> and <a href="http://en.wikipedia.org/wiki/Fortune_(Unix)" target=_blank>fortune</a>
+(Hooray Linux!) For any feedback <a href="https://twitter.com/Diederik_za">@diederik_za</a> Sorry for recent down time (May 2017).
 </p>
 </div>
 </body>

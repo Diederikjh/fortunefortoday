@@ -1,0 +1,7 @@
+{
+    "name": "fortunefortoday-get-cookie",
+    "main": "index.js",
+    "dependencies": {
+        "soap": "~0.19.0"
+    }
+}
