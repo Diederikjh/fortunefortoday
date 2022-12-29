@@ -5,7 +5,7 @@ on:
     branches:
       - master
 jobs:
-  build:
+  run:
     runs-on: ubuntu-latest
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -16,9 +16,8 @@ jobs:
           uses: reggionick/s3-deploy@v3
           with:
             folder: client
-            bucket: ${{ secrets.S3_BUCKET }}
+            bucket: fortunefortoday.com
             bucket-region: us-west-2
-            dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
             invalidation: /
             delete-removed: false
             no-cache: true
