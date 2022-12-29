@@ -13,7 +13,7 @@ jobs:
     timeout-minutes: 10
     steps:
          - name: Deploy
-         - uses: reggionick/s3-deploy@v3
+           uses: reggionick/s3-deploy@v3
            with:
             folder: client
             bucket: ${{ secrets.S3_BUCKET }}
